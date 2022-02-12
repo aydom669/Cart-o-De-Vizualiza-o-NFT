@@ -1,0 +1,178 @@
+// variaveis
+
+// color Primary
+
+$Softblue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Neutral
+
+// (main BG)
+$Very_dark_blue_1: hsl(217, 54%, 11%);   
+
+// (card BG)
+$Very_dark_blue_2: hsl(216, 50%, 16%);
+
+// (line)
+
+$Very_dark_blue_3 : hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+// Body Copy
+
+// (paragraph)
+
+$Font_size: 18px;
+
+// variaveis / Final
+
+// font Import
+
+@import url('https://fonts.googleapis.com/css2? family= Roupa:wght@300;400;600 & family= Poppins:ital,wght@0,100;0,600;1,100;1,300 & family= Roboto:wght@400;500 & display=swap');
+
+
+body{
+    background: $Very_dark_blue_1;
+    color: $White;
+    font-family: "Outfit" sans-serif;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card__conteiner{
+        width: 300px;
+        height: 500px;
+
+
+        .card__box{
+            background: $Very_dark_blue_2;
+            padding: 20px 20px;
+            border-radius: 13px;
+        }
+
+        .card__img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .card__img img{
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .review__hover{
+            width: 260px;
+            height: 260px;
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &:hover{
+                width: 260px;
+                height: 260px;
+                position:absolute;
+                background: $Cyan;
+                opacity: 0.5;
+                z-index: 999;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            
+             img{
+                width: 50px;
+                color: #fff;
+                z-index: -1;
+
+                &:hover{
+                    width: 50px;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .card__content{
+
+        .content__titulo{
+            font-weight: 900;
+            font-size: 22px;
+
+            &:hover{
+                color: $Cyan;
+                cursor: pointer;
+                transition: 0.5s;
+            }  
+        }
+
+        .content__paragrafo{
+            font-size: 17px;
+            line-height: 1.5;
+            font-weight: 400;
+            color: $Softblue;
+        }
+    }
+
+    .content__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid $Very_dark_blue_3 ;
+
+        span{
+            color: $Cyan;
+            padding: 0px 5px;
+
+            img{
+                padding-right: 2px;
+                width: 9px;
+            }
+        }
+
+        p{
+            color: $Softblue;
+            font-size: 18px;
+        }
+    }
+
+    .card__usuario{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        .usuario__img img{
+            width: 30px;
+            padding-right: 5px;
+        }
+
+        p{
+
+            span{
+                color: $Softblue;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+   
+    .conteiner{
+        height: 110vh;
+       
+
+        .card__box{
+            margin-bottom: 15px;
+        }
+    }
+}

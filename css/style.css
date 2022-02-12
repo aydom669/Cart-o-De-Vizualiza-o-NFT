@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2? family= Roupa:wght@300;400;600 & family= Poppins:ital,wght@0,100;0,600;1,100;1,300 & family= Roboto:wght@400;500 & display=swap");
+body {
+  background: #0d192b;
+  color: white;
+  font-family: "Outfit" sans-serif; }
+
+.conteiner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .conteiner .card__conteiner {
+    width: 300px;
+    height: 500px; }
+    .conteiner .card__conteiner .card__box {
+      background: #14253d;
+      padding: 20px 20px;
+      border-radius: 13px; }
+    .conteiner .card__conteiner .card__img {
+      width: 100%;
+      height: 100%; }
+    .conteiner .card__conteiner .card__img img {
+      width: 100%;
+      z-index: 1000; }
+    .conteiner .card__conteiner .review__hover {
+      width: 260px;
+      height: 260px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .conteiner .card__conteiner .review__hover:hover {
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        background: #00fff7;
+        opacity: 0.5;
+        z-index: 999;
+        transition: 0.5s;
+        cursor: pointer; }
+      .conteiner .card__conteiner .review__hover img {
+        width: 50px;
+        color: #fff;
+        z-index: -1; }
+        .conteiner .card__conteiner .review__hover img:hover {
+          width: 50px;
+          transition: 0.5s; }
+  .conteiner .card__content .content__titulo {
+    font-weight: 900;
+    font-size: 22px; }
+    .conteiner .card__content .content__titulo:hover {
+      color: #00fff7;
+      cursor: pointer;
+      transition: 0.5s; }
+  .conteiner .card__content .content__paragrafo {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #8bacda; }
+  .conteiner .content__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #2f415b; }
+    .conteiner .content__flex span {
+      color: #00fff7;
+      padding: 0px 5px; }
+      .conteiner .content__flex span img {
+        padding-right: 2px;
+        width: 9px; }
+    .conteiner .content__flex p {
+      color: #8bacda;
+      font-size: 18px; }
+  .conteiner .card__usuario {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; }
+    .conteiner .card__usuario .usuario__img img {
+      width: 30px;
+      padding-right: 5px; }
+    .conteiner .card__usuario p span {
+      color: #8bacda; }
+
+@media (max-width: 375px) {
+  .conteiner {
+    height: 110vh; }
+    .conteiner .card__box {
+      margin-bottom: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
